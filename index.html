@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="About DNS!">
+  <meta name="keywords" content="DNS, Nameservers, URLs">
+  <meta name="author" content="Emily Baier">
+  <title>About DNS</title>
+</head>
+<body>
+  <header>
+      <h1>Tell me about DNS!</h1>
+    <nav>
+    Jump to: <a href="#dns">What is DNS?</a> | 
+    <a href="#what-happens">What is happening?</a> |
+    <a href="#behind-the-scenes">Behind The Scenes</a> | 
+    <a href="#learn-more">Learn More</a>
+    </nav>
+    
+  </header>
+  <main>
+    <article>
+      <section>
+        <header><h2>What is DNS?</h2></header>
+        <p id="dns">Domain Name System - or <abbr title="Domain Name System">DNS</abbr> is a decentralized naming system for things that are connected to the internet, associating information with domain names.</p>
+      </section>
+      <section>
+          <header><h2>What happens when you type in a URL?</h2></header>
+          <p id="what-happens">When you request a domain name, your computer asks the domain name resolver to query the root server, which then refers the resolver to the nameserver (.org nameserver, .com nameserver...) which is then referred to the domain nameserver. Finally the resolver will receive an authoritative answer which will be the <abbr title="Internet Protocol">IP</abbr> address related to the requested <abbr title="Uniform Resource Locator">URL</abbr>. The resolver will cache recent lookups in case you search for it again, so it doesn't need to go on this journey every time.</p>
+      </section>
+      <section>
+          <header><h2>But where does this happen?</h2></header>
+          <p id="behind-the-scenes">This all happens behind the scenes in your web browser, email client, video game player, etc. </p>
+      </section>
+      <section>
+          <header> <h2>Very interesting. How do I learn more?</h2></header>
+          <p id="learn-more">You can learn more from these websites:</p>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Domain_Name_System">Domain Name System - Wikipedia</a></li>
+          <li><a href="https://howdns.works/">How DNS Works - Comic!</a></li>
+        </ul>
+      </section>
+    </article>
+  </main>
+  <footer>
+<p>This website was made by Emily to teach you about DNS, and to practice writing static semantic HTML.</p>
+  </footer>
+</body>
+</html>
